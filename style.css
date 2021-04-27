@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #DEDDDA;
+  }
+  .header-title{
+    text-align: center;
+    font-size: 36px;
+    margin-top: 50px;
+    font-weight: 900 !important;
+    color: green;
+}
+  .search-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .search-icon {
+    margin-right: -35px;
+    color: lightgray;
+    z-index: 1;
+  }
+  .search-field {
+    width: 250px;
+    height: 40px;
+    padding: 0px 40px;
+    color: #3b2d64;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+  }
+  .search-btn {
+    margin-left: -5px;
+    width: 80px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 0px 5px 5px 0px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+  }
+h1, h2, h3, h4 {
+  color: #252525;
+}
+img {
+  max-width: 100%;
+}
+.text-center {
+  text-align: center;
+}
+/* Search Items */
+.food-items {
+    width: 1140px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+.food-item {
+  background-color: white;
+}
+.food-item h4 {
+  padding: 10px 0;
+  cursor: pointer;
+}
+/* Error */
+#error {
+  position: fixed;
+  display: none;
+  background-color: #00000060;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+/* Details Area */
+#details {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.item-details,
+.error-content {
+  background-color: white;
+  width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  position: relative;
+}
+.details-img {
+  width: 300px;
+  margin: 0 auto;
+}
+.item-details h2 {
+  margin: 12px 0;
+  cursor: pointer;
+}
+.item-details h4 {
+  margin-bottom: 10px;
+}
+.item-details li {
+  margin-top: 4px;
+  margin-left: 16px;
+  color: gray;
+}
+/* Close Button */
+.close {
+  position: absolute;
+  padding: 4px 10px;
+  font-size: 22px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  background-color: #fff;
+  color:red;
+  top: 15px;
+  right: 20px;
+  font-weight: 600;
+}
